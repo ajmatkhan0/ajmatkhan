@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="account.png" alt="User Image" class="user-image">
+                <h3>HELLO HARDIK RANA</h3>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>  
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="editprofile.html">View/Edit Profile</a></li>
+                    <li><a href="updatepass.html">Update Password</a></li>
+                  
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="header">
+                <h1>Please give your answer about the following question by circling the given grade on the scale:</h1>
+                <div class="rating-scale">
+                    <span>Strongly Agree</span>
+                    <span>Agree</span>
+                    <span>Neutral</span>
+                    <span>Disagree</span>
+                    <span>Strongly Disagree</span>
+                </div>
+            </div>
+            <div class="feedback-form">
+                <label for="faculty">Give Your Feedback:</label>
+                <select id="faculty" name="faculty">
+                    <option value="faculty1">Manu Bansal</option>
+                    <!-- Add more faculty options here -->
+                </select>
+
+                <div class="question-section">
+                    <h2>1. Course Material</h2>
+                    <div class="question">
+                        <p>Teacher provided the course outline having weekly content plan with list of required text book:</p>
+                        <div class="rating-options">
+                            <label><input type="radio" name="q1" value="5"> 5</label>
+                            <label><input type="radio" name="q1" value="4"> 4</label>
+                            <label><input type="radio" name="q1" value="3"> 3</label>
+                            <label><input type="radio" name="q1" value="2"> 2</label>
+                            <label><input type="radio" name="q1" value="1"> 1</label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Course objectives, learning outcomes, and grading criteria are clear to me:</p>
+                        <div class="rating-options">
+                            <label><input type="radio" name="q2" value="5"> 5</label>
+                            <label><input type="radio" name="q2" value="4"> 4</label>
+                            <label><input type="radio" name="q2" value="3"> 3</label>
+                            <label><input type="radio" name="q2" value="2"> 2</label>
+                            <label><input type="radio" name="q2" value="1"> 1</label>
+                        </div>
+                    </div>
+
+                    <!-- Add more questions similarly -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

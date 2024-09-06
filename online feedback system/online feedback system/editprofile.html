@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Edit Dashboard</title>
+    <link rel="stylesheet" href="editprofile.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-info">
+                <img src="account.png" alt="Profile Image" class="profile-pic">
+                <h2>user</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>  
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="#">View/Edit Profile</a></li>
+                    <li><a href="updatepass.html">Update Password</a></li>
+                  
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Edit Profile</h1>
+            </header>
+            <section class="profile-edit-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value=" ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number:</label>
+                        <input type="text" id="phone" name="phone" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program:</label>
+                        <select id="program" name="program">
+                            <option value="btech" selected>B.Tech</option>
+                            <!-- More options can be added here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="semester">Semester:</label>
+                        <select id="semester" name="semester">
+                            <option value="1" selected>I</option>
+                            <option value="2" selected>II</option>
+                            <option value="3" selected>	III</option>
+                            <option value="4" selected>IV</option>
+                            <option value="5" selected>V</option>
+                            <option value="6" selected>VI</option>
+                            <!-- More options can be added here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" value="1999-07-27">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Update My Profile</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+                <div class="profile-picture-upload">
+                    <img src="profile.jpg" alt="profile photo" class="profile-pic-preview">
+                    <label for="profile-image">Change Profile Image:</label>
+                    <input type="file" id="profile-image" name="profile-image">
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

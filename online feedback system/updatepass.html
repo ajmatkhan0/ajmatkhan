@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Password</title>
+    <link rel="stylesheet" href="updatepass.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="account.png" alt="Profile Picture">
+            <h3>HELLO HARDIK RANA</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="editprofile.html">View/Edit Profile</a></li>
+                <li><a href="updatepass.html">Update Password</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="title">UPDATE PASSWORD</div>
+            <div class="logout"><a href="index.html">Log out</a></div>
+        </div>
+        <div class="form-container">
+            <h2>Update Password</h2>
+            <form>
+                <label for="old-password">Enter your old password</label>
+                <input type="password" id="old-password" name="old-password" required>
+
+                <label for="new-password">Enter your new password</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Enter your confirm password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <div class="buttons">
+                    <button type="submit">Update My Password</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

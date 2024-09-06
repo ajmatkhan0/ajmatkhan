@@ -1,0 +1,122 @@
+
+*{
+    color: black;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color:  rgb(101, 183, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.sidebar .profile-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .profile-info .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.dashboard-header h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.profile-edit-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.form-actions button[type="reset"] {
+    background-color: #f44336;
+}
+
+.profile-picture-upload {
+    margin-top: 20px;
+}
+
+.profile-picture-upload .profile-pic-preview {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profile-picture-upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-picture-upload input[type="file"] {
+    display: block;
+}
